@@ -1,4 +1,4 @@
-import "./style/Contacto.css";
+import "../style/Contacto.css";
 
 function Contacto(props) {
   return (
@@ -10,22 +10,22 @@ function Contacto(props) {
           <form onSubmit={props.handleSubmit}>
             <div className="user-box">
               <input type="text" id="nombre" onChange={props.handleChange}
-                value={newMessage.nombre} />
+                /* value={props.newtext.nombre} */ />
               <label htmlFor="nombre">Nombres</label>
             </div>
             <div className="user-box">
               <input type="text" id="correo" onChange={props.handleChange}
-                value={newMessage.correo} />
+                /* value={props.newtext.correo} */ />
               <label htmlFor="correo">Email</label>
             </div>
             <div className="user-box">
               <input type="text" id="telefono" onChange={props.handleChange}
-                value={newMessage.telefono} />
+                /* value={props.newtext.telefono} */ />
               <label htmlFor="telefono">Telefono</label>
             </div>
             <div className="user-box">
               <input type="textarea" id="mensaje" onChange={props.handleChange}
-                value={newMessage.mensaje} />
+                /* value={props.newtext.mensaje} */ />
               <label htmlFor="mensaje">Mensaje</label>
             </div>
             <a disabled={props.disableSubmit} type="submit">
