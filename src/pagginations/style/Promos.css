@@ -1,0 +1,40 @@
+.contenedor-galeria {
+  display: flex;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 800px;
+  background: linear-gradient(to right, rgb(133, 124, 93) 75%, rgb(247, 195, 25)25%);
+}
+
+.img-fondo-galeria {
+  position: relative;
+  filter: brightness(90%);
+  top: 20%;
+  left: 14%;
+  bottom: 25%;
+  width: 72%;
+  height: 68%;
+}
+
+.c-galeria {
+  position: relative;
+  width: 25%;
+  height: 25%;
+  top: 52%;
+  right: 12%;
+}
+
+.carousel-control-prev-icon {
+  margin-top: 250px;
+  border-radius: 25px;
+  background-color: rgb(221, 133, 33);
+}
+
+.carousel-control-next-icon {
+  position: relative;
+  margin-top: 250px;
+  right: 280px;
+  border-radius: 25px;
+  background-color: rgb(221, 133, 33);
+}

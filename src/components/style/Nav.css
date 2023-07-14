@@ -1,0 +1,30 @@
+.navbar {
+  background-color: transparent !important;
+}
+
+.espace {
+  margin-right: 15px;
+  padding-top: 15px;
+}
+
+.space-text {
+  margin-right: 50px;
+  color: #ffffff;
+}
+
+.space-logo {
+  margin-left: 40px;
+  padding-top: 20px;
+}
+
+.logo {
+  width: 300px;
+}
+
+.linea {
+  border-top: 2px solid rgb(236, 180, 60);
+  left: 0px;
+  top: 105px;
+  position: fixed;
+  width: 100%;
+}
