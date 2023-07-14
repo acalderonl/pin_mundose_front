@@ -1,29 +1,29 @@
 import { useState } from "react";
-import Contacto from "../pagginations/Contacto"
+import Contacto from "../Contacto"
 import axios from "axios"
 
 function SendMessage() {
-    const [newMessage, setNewMessage] = useState({
+    /* const [newtext, setNewText] = useState({
         nombre: "",
         correo: "",
         telefono: "",
         mensaje: ""
-    })
+    }); */
 
     const [success, setSuccess] = useState(false)
     const [error, setError] = useState(false)
     const [errorMessage, setErrorMessage] = useState(false)
 
-    const disableSubmit = !newMessage.nombre || !newMessage.correo || !newMessage.telefono || !newMessage.mensaje
+    const disableSubmit = !newtext.nombre || !newtext.correo || !newtext.telefono || !newtext.mensaje
 
     const handleChange = (event) => {
         const property = event.target.id;
         const value = event.target.value;
-        setNewMessage({ ...newMessage, [property]: value });
+        setNewText({ ...newtext, [property]: value });
         if (success) setSuccess(false);
     }
 
-    const handleSubmit = (event) => {
+    /* const handleSubmit = (event) => {
         event.preventDefault();
 
         axios({
@@ -32,7 +32,7 @@ function SendMessage() {
         })
             .then((response) => {
                 setSuccess(true);
-                setNewMessage({
+                setNewText({
                     nombre: "",
                     correo: "",
                     telefono: "",
@@ -45,7 +45,7 @@ function SendMessage() {
                     ? setErrorMessage(error.message)
                     : setErrorMessage("Tuvimos un problema al procesar");
             });
-    };
+    }; */
 
     return (
         <Contacto
@@ -53,7 +53,7 @@ function SendMessage() {
             error={error}
             success={success}
             disableSubmit={disableSubmit}
-            newMessage={newMessage}
+            newtext={newtext}
             handleChange={handleChange}
             handleSubmit={handleSubmit}
         />

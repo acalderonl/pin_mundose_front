@@ -1,10 +1,10 @@
-import "./style/Nav.css";
-import Landing from "../pagginations/Landing";
-import Conocenos from "../pagginations/Conocenos";
-import Promos from "../pagginations/Promos";
-import Servicios from "../pagginations/Servicios";
-import Contacto from "../pagginations/Contacto";
-import Fotter from "../pagginations/Fotter";
+import "../style/Nav.css";
+import Landing from "../../pagginations/Landing";
+import Conocenos from "../../pagginations/Conocenos";
+import Promos from "../../pagginations/Promos";
+import Servicios from "../../pagginations/Servicios";
+import Contacto from "../Form/Contacto";
+import Fotter from "../../pagginations/Fotter";
 
 function Navbar() {
   return (
