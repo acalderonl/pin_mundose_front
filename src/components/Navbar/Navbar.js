@@ -3,8 +3,8 @@ import Landing from "../../pagginations/Landing";
 import Conocenos from "../../pagginations/Conocenos";
 import Promos from "../../pagginations/Promos";
 import Servicios from "../../pagginations/Servicios";
-import Contacto from "../Form/Contacto";
 import Fotter from "../../pagginations/Fotter";
+import Register from "../Register"
 
 function Navbar() {
   return (
@@ -68,7 +68,7 @@ function Navbar() {
         </div>
 
         <div id="contacto">
-          <Contacto />
+          <Register />
         </div>
 
         <div>

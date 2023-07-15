@@ -19,10 +19,10 @@
 
 .form-contact {
   position: relative;
-  top: 50%;
+  top: 53%;
   left: 30%;
   width: 400px;
-  height: 67%;
+  height: 73%;
   padding: 40px;
   transform: translate(-50%, -50%);
   background: rgb(97, 155, 194);
@@ -164,7 +164,7 @@
   }
 }
 
-.form-contact a span:nth-child(4) {
+.form-contact span:nth-child(4) {
   bottom: -100%;
   left: 0;
   width: 2px;
