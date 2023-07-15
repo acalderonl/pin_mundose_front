@@ -22,7 +22,8 @@ function Contacto(props) {
                 type="text"
                 id="apellido"
                 onChange={props.handleChange}
-                value={props.newtext.apellido} />
+                value={props.newtext.apellido}
+              />
               <label htmlFor="apellido">Apellido</label>
             </div>
             <div className="user-box">
@@ -30,7 +31,7 @@ function Contacto(props) {
                 type="text"
                 id="correo"
                 onChange={props.handleChange}
-                alue={props.newtext.correo} />
+                value={props.newtext.correo} />
               <label htmlFor="correo">Email</label>
             </div>
             <div className="user-box">
@@ -49,7 +50,7 @@ function Contacto(props) {
                 value={props.newtext.mensaje} />
               <label htmlFor="mensaje">Mensaje</label>
             </div>
-            <button disabled={props.disableSubmit} type="submit">
+            <button className="btn-enviar" disabled={props.disableSubmit} type="submit">
               <span></span>
               <span></span>
               <span></span>

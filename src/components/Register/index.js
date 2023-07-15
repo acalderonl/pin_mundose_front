@@ -23,18 +23,18 @@ function SendMessage() {
 
         setNewText({ ...newtext, [property]: value });
         if (success) setSuccess(false);
-        console.log(newtext)
+
     };
 
 
     const handleSubmit = (event) => {
         event.preventDefault();
 
-        axios({
-            method: "POST",
-            url: "https://pinbackfullstack-production.up.railway.app/api/register-client",
-        })
+        axios
+            .post("https://pinbackfullstack-production.up.railway.app/api/register-client", newtext)
+
             .then((response) => {
+
                 setSuccess(true);
                 setNewText({
                     nombre: "",
@@ -44,7 +44,9 @@ function SendMessage() {
                     mensaje: ""
                 });
             })
+
             .catch((error) => {
+
                 setError(error);
                 error.message
                     ? setErrorMessage(error.message)
